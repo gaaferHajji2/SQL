@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+
+<resultset statement="SELECT * FROM limbs" 
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <row>
+	<field name="thing">human</field>
+	<field name="legs">2</field>
+	<field name="arms">2</field>
+  </row>
+
+  <row>
+	<field name="thing">insect</field>
+	<field name="legs">6</field>
+	<field name="arms">0</field>
+  </row>
+
+  <row>
+	<field name="thing">squid</field>
+	<field name="legs">0</field>
+	<field name="arms">10</field>
+  </row>
+
+  <row>
+	<field name="thing">fish</field>
+	<field name="legs">0</field>
+	<field name="arms">0</field>
+  </row>
+
+  <row>
+	<field name="thing">centipede</field>
+	<field name="legs">100</field>
+	<field name="arms">0</field>
+  </row>
+
+  <row>
+	<field name="thing">table</field>
+	<field name="legs">4</field>
+	<field name="arms">0</field>
+  </row>
+
+  <row>
+	<field name="thing">armchair</field>
+	<field name="legs">4</field>
+	<field name="arms">2</field>
+  </row>
+
+  <row>
+	<field name="thing">phonograph</field>
+	<field name="legs">0</field>
+	<field name="arms">1</field>
+  </row>
+
+  <row>
+	<field name="thing">tripod</field>
+	<field name="legs">3</field>
+	<field name="arms">0</field>
+  </row>
+
+  <row>
+	<field name="thing">Peg Leg Pete</field>
+	<field name="legs">1</field>
+	<field name="arms">2</field>
+  </row>
+
+  <row>
+	<field name="thing">space alien</field>
+	<field name="legs" xsi:nil="true" />
+	<field name="arms" xsi:nil="true" />
+  </row>
+</resultset>
