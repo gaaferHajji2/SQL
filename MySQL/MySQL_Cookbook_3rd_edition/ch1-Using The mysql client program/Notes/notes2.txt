@@ -1,0 +1,35 @@
+1--> To Insert data in specific table:
+	sql--> INSERT INTO table_name (column1, ...etc) VALUES(value1, ...etc), ...etc.
+	IF the id is AUTO INCREMENT then we don't set tvalue to it, because the server program will assign value to it.
+	----------------------------------------
+2--> To Select Or Retrieve data from MySQL Database:
+	1--> Connect to MySQL server program.
+	2--> Change to distination database.
+	3--> Select The Data from specific table:
+		sql--> SELECT * FROM table_name;
+	4--> if we want to set condition to this select operation:
+		sql--> SELECT * FROM table_name WHERE column1=value1 [AND|OR|...etc] column2=value2, ...etc.
+	----------------------------------------
+3--> To Delete Data from table:
+	1--> Connect, Change Database.
+	2--> Delete all data from table:
+		sql--> DELETE FROM table_name;
+	3--> to set condition for delete specific row:
+		sql--> DELETE FROM table_name WHERE column1=value1 [AND|OR] column2=value2, ...etc.
+	----------------------------------------
+4--> To Update Data From table:
+	1--> Connect, Change Database;
+	2--> Update all data from TABLE;
+		sql--> UPDATE table_name SET column1=value1, ...etc.
+	3--> if we want to update specific row from table, we set condition:
+		sql--> UPDATE table_name SET column1=value1, ...etc WHERE column1=value1[AND|OR|...etc] ..etc.
+	----------------------------------------
+5--> To insert data into table from another table that have the same structure:
+	1--> Connect, Change Database;
+	2--> INSERT data in specific table:
+		sql--> INSERT INTO table_name2 SELECT column1, column2, ...etc FROM table_name1;
+		for example:
+		sql--> INSERT INTO users2 SSELECT * FROM users;
+	3--> If we want to select specific rows depending on specific condition:
+		sql--> INSERT INTO table_name2 SLECT * FROM table_name1 WHERE column1=value1[AND|OR|...etc] ...etc.
+	----------------------------------------

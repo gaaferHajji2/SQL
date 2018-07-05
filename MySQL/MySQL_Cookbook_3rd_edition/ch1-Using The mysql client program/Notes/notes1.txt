@@ -1,0 +1,49 @@
+To Make Connection to MySQL Serevr Program:
+	
+	./mysql -h localhost -u root -p
+	then enter the password.
+	Parameters:
+	-h: The Host, its value can be for example: www.myhost.com.
+	-u: username.
+	-p: password.
+	----------------------------------------------
+To CREATE User and set Permission to him/her:
+	1--> make connection to mysql server.
+	2--> create user information: 
+		sql--> CREATE USER 'username'@'hostname' IDENTIFIED BY 'password'
+	where:
+	username: can be any name like gaafer, user, gaafer2, ...etc.
+	hostname: can be any host localhost, www.myhost.com, 123.1.1.102
+	password: can be any password that admin/user choice.
+	
+	3--> GRANT the permission to the user on Database:
+		sql--> GRANT ALL ON cookbook.* TO 'username'@'hostname';
+	
+	4--> Then we can exit from mysql server: exit.
+	
+	5--> make conenction to mysql server program using the created user information:
+		sql--> mysql -h hostname -u username -p
+	----------------------------------------------
+To CREATE Database:
+	sql--> CREATE DATABASE database_name;
+	where database_name: any name that we want, or specified by project subject or rules.
+	
+To Change to our database to begin use it:
+	sql--> USE database_name;
+	
+To Create Table in our database:
+	sql--> CREATE TABLE table_name (column_name DATATYPE, ...etc)
+	for example:
+	sql--> CREATE TABLE usres (id INT PRIMARY KEY AUTO INCREMENT, fname VARCHAR(20) NOT NULL, lname VARCHAR(20) NOT NULL);
+	
+To INSERT Data Into table:
+	1--> First we check the database that we use (change to it): USE database_name;
+	
+	2--> use INSERT statement:
+		sql--> INSERT INTO tablename(column1, ...) VALUES (value1, ...)
+		for example:
+		sql--> INSERT INTO users(fname, lname) VALUES ('Gaafer1', 'Hajji'), ('Gaafer2', 'Hajji')
+	 	Note: here we don't set id because it is AUTO_INCREMENT.
+	----------------------------------------------
+To Show All availble databases:
+	SHOW databases;
